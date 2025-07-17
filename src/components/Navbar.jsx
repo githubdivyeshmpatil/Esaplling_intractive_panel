@@ -212,12 +212,7 @@ export default function Navbar() {
 
         {/* Right: CTA & Mobile Menu Toggle */}
         <div className="flex items-center space-x-3">
-          <Link
-            to="/book-demo"
-            className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition"
-          >
-            Book a Demo
-          </Link>
+         
           <button onClick={() => setIsOpen(!isOpen)} className="text-black focus:outline-none md:hidden">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
